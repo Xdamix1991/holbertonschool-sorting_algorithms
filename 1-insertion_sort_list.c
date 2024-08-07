@@ -19,7 +19,7 @@ while (current != NULL)
 temp = current;
 while (temp->prev != NULL && temp->n < temp->prev->n)
 {
-/* Réajuste les pointeurs pour enlever `temp` de sa position actuelle. */       
+/* Réajuste les pointeurs pour enlever `temp` de sa position actuelle. */
 temp->prev->next = temp->next;
 if (temp->next != NULL)
 temp->next->prev = temp->prev;
